@@ -177,7 +177,7 @@
 
 			guiStatsEl.innerHTML = [
 
-				'<i>GPU draw calls</i>: 1',
+				'<i>GPU draw calls</i>: ' + api.count,
 				'<i>GPU memory</i>: ' + formatBytes( api.count * 16 + geometryByteLength, 2 )
 
 			].join( '<br/>' );
@@ -208,7 +208,7 @@
 
 			guiStatsEl.innerHTML = [
 
-				'<i>GPU draw calls</i>: 1',
+				'<i>GPU draw calls</i>: ' + api.count,
 				'<i>GPU memory</i>: ' + formatBytes( getGeometryByteLength( mergedGeometry ), 2 )
 
 			].join( '<br/>' );
